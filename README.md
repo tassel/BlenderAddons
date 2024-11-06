@@ -1,7 +1,7 @@
 # BlenderAddons
 I will make my snippets for Blender available here
 
-**NESH SIZE ANALYZER:**
+**MESH SIZE ANALYZER:**
 Analyzes the scene and displays the objects with the highest polygon count first, so it becomes easier to find objects with a high polycount.
 
 Screenshot:
