@@ -6,7 +6,7 @@ COLOR_MATERIALS = {
     "Yellow_1": (1, 0.964, 0, 1),           # Yellow
     "Yellow_2": (0.866, 0.639, 0, 1),       # Yellow2
     "Green_1": (0, 1, 0, 1),                # Green
-    "Green_": (0, 0.306, 0.067, 1),         # Dark Green
+    "Green_2": (0, 0.306, 0.067, 1),         # Dark Green
     "Grey_1": (0.235, 0.235, 0.235, 1),     # Grey
     "Grey_2": (0.604, 0.604, 0.604, 1),     # Light Grey
     "Red": (1, 0, 0, 1),                    # Red
