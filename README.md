@@ -1,6 +1,6 @@
 # BlenderAddons
 
-## <code>**MESH SIZE ANALYZER**</code>
+## <code>**VESSEL MOTION GENERATOR**</code>
 >[!NOTE]
 > Blender Vessel Motion Generator Add-on
 > This Blender add-on generates and applies realistic vessel motion animations directly inside Blender. It allows users to create smooth, ocean-like vessel movements without needing external tools.
