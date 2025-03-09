@@ -22,7 +22,7 @@
 > - Tested with Blender 4.2.2 / 4.2.3 (LTS)
 
 Screenshot:
-![image](https://github.com/user-attachments/assets/cc8058b4-ed40-45c8-8dc6-bf17d2a7bac5)
+![image](https://github.com/user-attachments/assets/7066717f-73db-405a-ac68-667312f83b22)
 ---
 
 ## <code>**MESH SIZE ANALYZER**</code>
