@@ -26,6 +26,7 @@
 > <code>BUG:</code> Presets does not work atm. I will fix when i get time.
 > ## TODO
 > - [ ] Need to fix Presets...
+> - [ ] Add key step function, so we can avoid animation keys on every frame...
 
 Screenshot:
 ![image](https://github.com/user-attachments/assets/7066717f-73db-405a-ac68-667312f83b22)
