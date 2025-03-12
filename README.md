@@ -4,7 +4,8 @@
 >[!NOTE]
 > Blender Vessel Motion Generator Add-on
 > This Blender add-on generates and applies realistic vessel motion animations directly inside Blender. It allows users to create smooth, ocean-like vessel movements without needing external tools.
->
+
+>[!TIP]
 > ## **Features:**
 >
 > - Customizable Motion Parameters.
@@ -20,8 +21,9 @@
 > One-click generation and application of motion.
 >
 > - Tested with Blender 4.2.2 / 4.2.3 (LTS)
->
-> - BUG: Presets does not work atm. I will fix when i get time.
+
+> [!IMPORTANT]
+> <code>BUG:</code> Presets does not work atm. I will fix when i get time.
 
 Screenshot:
 ![image](https://github.com/user-attachments/assets/7066717f-73db-405a-ac68-667312f83b22)
