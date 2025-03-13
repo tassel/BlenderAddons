@@ -13,6 +13,8 @@ class VesselMotionProperties(bpy.types.PropertyGroup):
     pitch: bpy.props.FloatProperty(name="Pitch", default=3.0, min=0.0, max=30.0)
     yaw: bpy.props.FloatProperty(name="Yaw", default=2.0, min=0.0, max=30.0)
     
+    keyframe_step: bpy.props.IntProperty(name="Keyframe Step", default=1, min=1, max=50, description="Set the step interval between keyframes")
+    
     preset: bpy.props.EnumProperty(
         name="Preset",
         description="Select a motion preset",
@@ -22,10 +24,20 @@ class VesselMotionProperties(bpy.types.PropertyGroup):
             ('medium', "Medium Sea", "Moderate motion"),
             ('heavy', "Heavy Sea", "Strong motion")
         ],
-        default='default'
+        default='default',
+        update=lambda self, context: self.update_preset()
     )
 
-    keyframe_step: bpy.props.IntProperty(name="Keyframe Step", default=1, min=1, max=50, description="Set the step interval between keyframes")
+    def update_preset(self):
+        presets = {
+            'default': {'surge': 0.2, 'sway': 0.15, 'heave': 0.1, 'roll': 5.0, 'pitch': 3.0, 'yaw': 2.0},
+            'calm': {'surge': 0.05, 'sway': 0.05, 'heave': 0.05, 'roll': 1.0, 'pitch': 1.0, 'yaw': 1.0},
+            'medium': {'surge': 0.3, 'sway': 0.25, 'heave': 0.2, 'roll': 10.0, 'pitch': 8.0, 'yaw': 5.0},
+            'heavy': {'surge': 0.5, 'sway': 0.4, 'heave': 0.35, 'roll': 20.0, 'pitch': 15.0, 'yaw': 10.0},
+        }
+        preset_values = presets.get(self.preset, presets['default'])
+        for attr, value in preset_values.items():
+            setattr(self, attr, value)
 
 class GenerateAndApplyMotionOperator(bpy.types.Operator):
     """Generate and Apply Vessel Motion to Selected Object"""
