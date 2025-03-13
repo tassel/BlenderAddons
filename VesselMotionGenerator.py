@@ -14,6 +14,17 @@ class VesselMotionProperties(bpy.types.PropertyGroup):
     yaw: bpy.props.FloatProperty(name="Yaw", default=2.0, min=0.0, max=30.0)
     
     keyframe_step: bpy.props.IntProperty(name="Keyframe Step", default=1, min=1, max=50, description="Set the step interval between keyframes")
+    motion_intensity: bpy.props.EnumProperty(
+        name="Intensity Level",
+        description="Set motion intensity",
+        items=[
+            ('static', "Static", "Minimal motion"),
+            ('normal', "Normal", "Default motion"),
+            ('dynamic', "Dynamic", "Extreme motion")
+        ],
+        default='normal',
+        update=lambda self, context: self.update_intensity()
+    )
     
     preset: bpy.props.EnumProperty(
         name="Preset",
@@ -28,6 +39,20 @@ class VesselMotionProperties(bpy.types.PropertyGroup):
         update=lambda self, context: self.update_preset()
     )
 
+    def update_intensity(self):
+        intensity_levels = {
+            'static': 0.1,
+            'normal': 1.0,
+            'dynamic': 5.0,
+        }
+        factor = intensity_levels.get(self.motion_intensity, 1.0)
+        self.surge *= factor
+        self.sway *= factor
+        self.heave *= factor
+        self.roll *= factor
+        self.pitch *= factor
+        self.yaw *= factor
+    
     def update_preset(self):
         presets = {
             'default': {'surge': 0.2, 'sway': 0.15, 'heave': 0.1, 'roll': 5.0, 'pitch': 3.0, 'yaw': 2.0},
@@ -49,6 +74,10 @@ class GenerateAndApplyMotionOperator(bpy.types.Operator):
         if not obj:
             self.report({'ERROR'}, "No object selected")
             return {'CANCELLED'}
+        
+        # Remove all keyframes from the selected object
+        if obj.animation_data and obj.animation_data.action:
+            obj.animation_data.action.fcurves.clear()
         
         props = context.scene.vessel_motion_props
         frame_count = props.frame_count
@@ -98,6 +127,8 @@ class VesselMotionPanel(bpy.types.Panel):
         layout.prop(props, "frame_count")
         layout.prop(props, "motion_speed")
         layout.prop(props, "preset")
+        layout.separator()
+        layout.prop(props, "motion_intensity")
         layout.separator()
         layout.prop(props, "surge")
         layout.prop(props, "sway")
