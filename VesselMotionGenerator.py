@@ -25,6 +25,8 @@ class VesselMotionProperties(bpy.types.PropertyGroup):
         default='default'
     )
 
+    keyframe_step: bpy.props.IntProperty(name="Keyframe Step", default=1, min=1, max=50, description="Set the step interval between keyframes")
+
 class GenerateAndApplyMotionOperator(bpy.types.Operator):
     """Generate and Apply Vessel Motion to Selected Object"""
     bl_idname = "wm.generate_apply_motion"
@@ -45,11 +47,12 @@ class GenerateAndApplyMotionOperator(bpy.types.Operator):
         roll = props.roll
         pitch = props.pitch
         yaw = props.yaw
+        keyframe_step = props.keyframe_step
         
         bpy.context.scene.frame_start = 1
         bpy.context.scene.frame_end = frame_count
         
-        for i in range(frame_count):
+        for i in range(0, frame_count, keyframe_step):
             radians = (i / 100) * (math.pi * 2) * speed
             
             obj.location = (
@@ -91,11 +94,12 @@ class VesselMotionPanel(bpy.types.Panel):
         layout.prop(props, "pitch")
         layout.prop(props, "yaw")
         layout.separator()
+        layout.prop(props, "keyframe_step")
         layout.operator("wm.generate_apply_motion", text="Generate & Apply Motion")
 
 class AboutPanel(bpy.types.Panel):
     """Creates an About Panel in the N-panel"""
-    bl_label = "About Vessel Motion Generator v1.0"
+    bl_label = "About Vessel Motion Generator v1.1"
     bl_idname = "PT_AboutVesselMotionImporter"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
