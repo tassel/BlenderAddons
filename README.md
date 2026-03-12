@@ -6,7 +6,8 @@
 
 <img width="1792" height="1024" alt="image" src="https://github.com/user-attachments/assets/76ce08fc-5fc7-4797-b9c3-2d1fb3a2d75a" />
 
-<details open>
+---
+
 <summary>Blender Addons</summary>
 
 * [Material Color Bar](https://github.com/tassel/BlenderAddons/tree/main/MaterialColorBar) <sub><i>-This tool helps to quickly assign predefined materials with specific colors to objects. It's designed to streamline scene setup when optimizing.</i></sub>
@@ -19,5 +20,4 @@ Single Snippets:
 * [Quick Batch Rename Objects and Materials](https://github.com/tassel/BlenderAddons/tree/main/Quick%20Batch%20Rename%20Objects%20and%20Materials) <sub><i>- Batch rename selected objects and all materials with prefix/suffix options.</i></sub>
 * [UVW Box mapping tool](https://github.com/tassel/BlenderAddons/tree/main/UVW%20Box%20Mapping%20Tool) <sub><i>- Simulates 3ds Max-style UVW Box Mapping with tiling.</i></sub>
 
-
-</details>
+---
