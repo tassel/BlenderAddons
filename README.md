@@ -1,6 +1,6 @@
 <div align = center>
 
-# Blender Addons Repo Index Made by Tassel
+# Blender Addons Repo Index
 
 </div>
 
