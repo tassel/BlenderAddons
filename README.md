@@ -1,6 +1,6 @@
 <div align = center>
 
-# Blender Addons Repo Index Made by Raymond/ChatGPT
+# Blender Addons Repo Index Made by Tassel/ChatGPT
 
 </div>
 
