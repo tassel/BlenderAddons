@@ -5,7 +5,7 @@ bl_info = {
     "blender": (2, 93, 0),
     "location": "View3D > Sidebar > UVW Box Map",
     "description": "Simulates 3ds Max-style UVW Box Mapping with tiling",
-    "category": "BRS Tools",
+    "category": "Tassel Tools",
 }
 
 import bpy
