@@ -14,6 +14,7 @@
 * [Mesh Size Analyzer](https://github.com/tassel/BlenderAddons/tree/main/MeshSizeAnalyzer) <sub><i>-Analyzes the scene and displays the objects with the highest polygon count first, so it becomes easier to find objects with a high polycount.</i></sub>
 * [Vessel Motion Generator](https://github.com/tassel/BlenderAddons/tree/main/VesselMotionGenerator) <sub><i>-Generates and applies realistic vessel motion animations directly inside Blender.</i></sub>
 * [Animation-Tool](https://github.com/tassel/BlenderAddons/tree/main/AnimationTool) <sub><i>-This tool helps to animate in a lazy way.</i></sub>
+* [Batch FBX Folder to Blender Collections](https://github.com/tassel/BlenderAddons/tree/main/Batch%20FBX%20Folder%20to%20Blender%20Collections) <sub><i>-Batch import all FBX files from a selected folder and automatically organize them into Blender Collections named after each FBX file.</i></sub>
 
 Single Snippets:
 * [Collapse Geo 2 Unique Mesh](https://github.com/tassel/BlenderAddons/tree/main/Colapse%20Selected%20Geometry%20to%20Unique%20Mesh) <sub><i>- Collapse Selected Geometry to Unique Mesh.</i></sub>
