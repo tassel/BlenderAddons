@@ -1,4 +1,4 @@
-# PBR Material Library — Blender Addon
+# Super Simple PBR Material Library — Blender Addon
 
 Super simple one-click material assignment tool for Blender.
 Built to speed up asset preparation for real-time engines and web 3D pipelines when hust want to assign "basic" mats.
