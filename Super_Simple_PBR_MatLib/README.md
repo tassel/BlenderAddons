@@ -24,6 +24,8 @@ All materials use **Principled BSDF** and export correctly via **glTF 2.0** to T
 
 ---
 
+<img width="243" height="832" alt="image" src="https://github.com/user-attachments/assets/a4f7a43c-e4fd-4175-b169-33b72c2f9db4" />
+
 ## Installation
 
 1. Download `pbr_material_library_EN.py`
