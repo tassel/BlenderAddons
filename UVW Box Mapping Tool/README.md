@@ -8,5 +8,6 @@
 >
 > Screenshot:
 >
-> ![image](https://github.com/user-attachments/assets/dc6a0dec-f8e8-45dd-85b1-4a16b008b052)
+><img width="667" height="191" alt="UVWBoxMapping" src="https://github.com/user-attachments/assets/5c71095e-27b6-498d-a045-d5071af12e8c" />
+
 ---
