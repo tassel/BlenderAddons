@@ -8,4 +8,4 @@
 >
 > Screenshot:
 
-![image](https://github.com/user-attachments/assets/601be94a-43c5-493f-9951-ecc72bb49f43)
+<img width="672" height="305" alt="BatchRenamingTool" src="https://github.com/user-attachments/assets/77012160-014f-4301-b4c8-d5d8c820b807" />
