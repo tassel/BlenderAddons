@@ -8,4 +8,5 @@
 >
 > Screenshot:
 >
-> ![image](https://github.com/user-attachments/assets/a0e932ae-ca2c-45f7-bc66-7f5ebf6d5bea)
+><img width="472" height="333" alt="422567129-a0e932ae-ca2c-45f7-bc66-7f5ebf6d5bea" src="https://github.com/user-attachments/assets/8721e3c1-e3e8-4b6f-bd17-08135d38c30e" />
+
